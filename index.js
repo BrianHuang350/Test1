@@ -3,6 +3,6 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
+app.get("/test", (req, res) => {
   return res.render("index");
 });
