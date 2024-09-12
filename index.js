@@ -6,3 +6,7 @@ app.set("view engine", "ejs");
 app.get("/test", (req, res) => {
   return res.render("index");
 });
+
+app.listen(post, () => {
+  console.log("123");
+});
