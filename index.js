@@ -9,7 +9,9 @@ app.set("view engine", "ejs");
 // app.set("views", path.join(__dirname, "/views"));
 
 app.get("/test", (req, res) => {
-  res.render("Success");
+  res.json({
+    message: "it is working!",
+  });
 });
 
 app.listen(8080, () => {
