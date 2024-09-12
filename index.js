@@ -7,6 +7,6 @@ app.get("/test", (req, res) => {
   return res.render("index");
 });
 
-app.listen(post, () => {
+app.listen(8080, () => {
   console.log("123");
 });
