@@ -4,7 +4,9 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/test", (req, res) => {
-  return res.render("index");
+  return res.json({
+    message: "成功部署",
+  });
 });
 
 app.listen(8080, () => {
